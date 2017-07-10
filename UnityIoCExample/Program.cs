@@ -17,9 +17,9 @@ namespace UnityIoCExample
             // load IoC configuration from App.Config
             container.LoadConfiguration();
             // resolve a dependent class
-            Dependent dependency = container.Resolve<Dependent>();
+            Dependent dependent = container.Resolve<Dependent>();
 
-            dependency.DoSomething();
+            dependent.DoSomething();
             Console.ReadLine();
         }
     }
